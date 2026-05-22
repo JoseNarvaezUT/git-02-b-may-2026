@@ -18,6 +18,13 @@ public class Calculadora {
         return numero1-numero2;
     }
 
+    public double dividir(){
+        if (numero2 == 0) {
+            throw new IllegalArgumentException("No se puede dividir por cero");
+        }
+        return numero1/numero2;
+    }
+
     public double multiplicar(){
         return numero1 * numero2;
     }
